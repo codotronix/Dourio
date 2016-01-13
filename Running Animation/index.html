@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Making Sprite Animation</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="../jquery-2.1.3.min.js"></script>
+	</head>
+	<body>
+		<div id="player" class="running"></div>
+
+		<br/>
+		<button id="toggleRun"> Stop / Run </button>
+
+
+		<script type="text/javascript">
+			$(function(){
+				$('#toggleRun').click(function(){
+					$('#player').toggleClass('running');
+				});
+			})
+		</script>
+	</body>
+</html>

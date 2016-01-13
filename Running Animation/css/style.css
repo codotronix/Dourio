@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+#player {
+	height: 83px;
+	width: 60px;
+	background: url('../img/sprite_GoltuRunning.png') -120px 0px no-repeat;
+}
+
+.reverse {
+	transform: scaleX(-1);
+}
+
+/*
+#player.standing {
+	background-position: -120px 0px;
+}
+*/
+
+#player.running {
+	-webkit-animation: playerRun .8s steps(60) infinite;
+       -moz-animation: playerRun .8s steps(60) infinite;
+        -ms-animation: playerRun .8s steps(60) infinite;
+         -o-animation: playerRun .8s steps(60) infinite;
+            animation: playerRun .2s steps(5) infinite;
+            animation-direction: alternate;
+}
+
+@-webkit-keyframes playerRun {
+   from { background-position:    0px; }
+     to { background-position: -300px; }
+}
+
+@-moz-keyframes playerRun {
+   from { background-position:    0px; }
+     to { background-position: -300px; }
+}
+
+@-ms-keyframes playerRun {
+   from { background-position:    0px; }
+     to { background-position: -300px; }
+}
+
+@-o-keyframes playerRun {
+   from { background-position:    0px; }
+     to { background-position: -300px; }
+}
+
+@keyframes playerRun {
+   from { background-position:    0px; }
+     to { background-position: -300px; }
+}
+

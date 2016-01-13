@@ -1,0 +1,57 @@
+html, body {
+	position: static;
+}
+
+* {
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+g-world {	
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;	
+}
+
+g-sky {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: skyblue;
+    background: linear-gradient(skyblue, skyblue, white, white);
+    overflow: hidden;
+}
+
+g-cloud {	
+	width: 100%;	
+}
+
+.cloud-row-1 {
+	top: 5px;
+	height: 50px;
+	background: url('../img/bgc4.png') 300px 0px repeat;
+	animation: cloud1Move 20s linear 0s infinite normal;
+}
+
+.cloud-row-2 {
+	top: 30px;
+	height: 100px;
+	background: url('../img/bgc3.png') 0px 0px repeat;
+	animation: cloud2Move 80s linear 0s infinite normal;
+}
+
+.cloud-row-3 {
+	top: 100px;
+}
+
+@keyframes cloud1Move {
+    from { background-position: 0px 0px; }
+    to { background-position: -509px 0px; }
+}
+
+@keyframes cloud2Move {
+    from { background-position: 0px 0px; }
+    to { background-position: -1183px 0px; }
+}
